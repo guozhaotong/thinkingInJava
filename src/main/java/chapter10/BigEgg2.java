@@ -41,6 +41,8 @@ public class BigEgg2 extends Egg2{
         insertYolk(new Yolk()) ;
     }
 
+    public int anInt;
+
     public static void main(String[] args){
         Egg2 egg2 = new BigEgg2();
 //        Egg2 egg2 = new Egg2();
