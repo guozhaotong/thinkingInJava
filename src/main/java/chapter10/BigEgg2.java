@@ -4,6 +4,7 @@ package chapter10;
  * @author 郭朝彤
  * @date 2017/11/23.
  */
+interface Te{};
 class Egg2{
     protected class Yolk{
         public Yolk(){
@@ -28,7 +29,7 @@ class Egg2{
 }
 
 
-public class BigEgg2 extends Egg2{
+public class BigEgg2 extends Egg2 implements Te{
     public class Yolk extends Egg2.Yolk{
         public Yolk(){
             System.out.println("BigEgg2.Yolk()");
