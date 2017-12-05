@@ -1,6 +1,8 @@
 package chapter15;
 
 
+import java.util.Arrays;
+
 /**
  * @author 郭朝彤
  * @date 2017/12/1.
@@ -44,6 +46,7 @@ class Solid<T extends Dimension & HasColor & Weight>{
 class Bounded extends Dimension implements HasColor , Weight {
     public java.awt.Color getColor() {return null;}
     public int weight(){return 0;}
+    class InnerB{}
 }
 
 public class BasicBounds {
@@ -52,5 +55,7 @@ public class BasicBounds {
         solid.color();
         solid.getY();
         solid.weight();
+        Bounded bounded = new Bounded();
+        System.out.println(Arrays.toString(Bounded.class.getClasses()));
     }
 }
