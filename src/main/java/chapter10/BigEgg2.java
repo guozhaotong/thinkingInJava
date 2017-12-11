@@ -34,6 +34,7 @@ public class BigEgg2 extends Egg2 implements Te{
         public Yolk(){
             System.out.println("BigEgg2.Yolk()");
         }
+        @Override
         public void f(){
             System.out.println("BigEgg2.Yolk.f()");
         }
@@ -49,5 +50,8 @@ public class BigEgg2 extends Egg2 implements Te{
 //        Egg2 egg2 = new Egg2();
         System.out.println();
         egg2.g();
+        if(true) {
+            System.out.println("true.");
+        }
     }
 }

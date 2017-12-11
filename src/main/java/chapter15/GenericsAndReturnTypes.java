@@ -13,6 +13,10 @@ interface GenericGetter <T extends GenericGetter<T>>{
 interface Getter extends GenericGetter<Getter>{}
 
 public class GenericsAndReturnTypes {
+    /**
+     *  jkljlk
+     * @param g jkljkl
+     */
     void test(Getter g){
         Getter result = g.get();
         GenericGetter genericGetter = g.get();
